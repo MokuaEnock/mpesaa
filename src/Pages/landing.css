@@ -1,0 +1,41 @@
+main {
+  width: 100vw;
+  height: 55vw;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-evenly;
+  border: thin solid black;
+}
+
+form {
+  width: 50vw;
+  height: 50%;
+  font-size: 1.7vw;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-evenly;
+  border: thin solid black;
+}
+
+input {
+  width: 80%;
+  height: 15%;
+  border: thin solid black;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+input:focus {
+  outline: thin solid transparent;
+}
+
+button {
+  height: 15%;
+  width: 50%;
+  border: thin solid black;
+  font-size: 1.7vw;
+}
