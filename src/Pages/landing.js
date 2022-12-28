@@ -9,7 +9,7 @@ export default function Landing() {
   let [numberA, setNumberA] = useState("");
   let [numberB, setNumberB] = useState("");
   let [errors, setErrors] = useState([]);
-  let [jobs, setJobs] = useState([])
+  let [jobs, setJobs] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -123,10 +123,11 @@ export default function Landing() {
       "https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=d0291057&app_key=e45310af6518f33ea0f2617638ff1d7f"
     )
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => setJobs(data))
       .catch((error) => console.error(error));
   }
 
+  console.log(jobs);
   return (
     <main id="landing">
       <form id="user" onSubmit={handleSubmit}>
