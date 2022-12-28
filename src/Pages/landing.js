@@ -90,7 +90,7 @@ export default function Landing() {
 
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    headers.append("Authorization", "Bearer GNAeMfYCpa3hZ0XLOC6RFEJHzaWf");
+    headers.append("Authorization", "Bearer QGVIxm60ITlAGcVZEA7xzGzlrzrm");
 
     fetch("https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest", {
       method: "POST",
@@ -98,16 +98,16 @@ export default function Landing() {
       body: JSON.stringify({
         BusinessShortCode: 174379,
         Password:
-          "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjIxMjI1MjAzODA3",
+          "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjIxMjI2MDA1MDI2",
         Timestamp: timestamped,
         TransactionType: "CustomerPayBillOnline",
         Amount: 1,
         PartyA: 254717594017,
         PartyB: 174379,
         PhoneNumber: 254717594017,
-        CallBackURL: "https://mpesa-jcyc.vercel.app",
-        AccountReference: "New Life",
-        TransactionDesc: "Pharmacy goods",
+        CallBackURL: "https://mpesa-jcyc.vercel.app/",
+        AccountReference: "NewLife",
+        TransactionDesc: "drugs",
       }),
     })
       .then((response) => response.text())
