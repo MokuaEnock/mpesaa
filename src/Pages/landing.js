@@ -9,6 +9,7 @@ export default function Landing() {
   let [numberA, setNumberA] = useState("");
   let [numberB, setNumberB] = useState("");
   let [errors, setErrors] = useState([]);
+  let [jobs, setJobs] = useState([])
 
   function handleSubmit(e) {
     e.preventDefault();
